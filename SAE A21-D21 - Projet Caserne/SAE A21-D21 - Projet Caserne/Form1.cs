@@ -18,7 +18,6 @@ namespace SAE_A21_D21___Projet_Caserne
         public Form1()
         {
             InitializeComponent();
-            Console.WriteLine("test");
         }
 
         private void Form1_Load(object sender, EventArgs e)
