@@ -19,6 +19,7 @@ namespace SAE_A21_D21___Projet_Caserne
         {
             InitializeComponent();
             Console.WriteLine("bite");
+            Console.WriteLine("zizi");
         }
 
         private void Form1_Load(object sender, EventArgs e)
