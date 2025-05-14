@@ -1,0 +1,9 @@
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\bin\Debug\UC-RecapMission.dll
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\bin\Debug\UC-RecapMission.pdb
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC-RecapMission.csproj.AssemblyReference.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC_RecapMission.UserControl1.resources
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC-RecapMission.csproj.GenerateResource.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC-RecapMission.csproj.CoreCompileInputs.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC-RecapMission.dll
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC-RecapMission.pdb
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-RecapMission\UC-RecapMission\obj\Debug\UC_RecapMission.Properties.Resources.resources

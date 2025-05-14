@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SAE_A21_D21___Projet_Caserne
+namespace UC_RecapMission
 {
-    public partial class UC_RecapMission : UserControl
+    public partial class UserControl1: UserControl
     {
-        public UC_RecapMission()
+        public UserControl1()
         {
             InitializeComponent();
         }

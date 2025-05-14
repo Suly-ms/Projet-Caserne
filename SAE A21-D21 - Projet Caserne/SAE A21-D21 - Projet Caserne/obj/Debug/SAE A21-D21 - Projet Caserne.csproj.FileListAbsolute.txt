@@ -11,3 +11,4 @@ C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - P
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-.CCC722CA.Up2Date
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.exe
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.pdb
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.UC_RecapMission.resources
