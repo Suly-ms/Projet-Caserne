@@ -1,6 +1,6 @@
 ﻿namespace UC_RecapMission
 {
-    partial class UserControl1
+    partial class UC_AffichageMission
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_AffichageMission));
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -103,7 +103,7 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Mission n°";
             // 
-            // UserControl1
+            // UC_AffichageMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,7 +114,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
+            this.Name = "UC_AffichageMission";
             this.Size = new System.Drawing.Size(647, 101);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);

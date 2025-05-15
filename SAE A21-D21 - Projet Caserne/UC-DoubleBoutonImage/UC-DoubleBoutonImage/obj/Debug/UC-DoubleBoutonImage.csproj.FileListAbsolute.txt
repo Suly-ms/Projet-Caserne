@@ -2,8 +2,8 @@ C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBouton
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\bin\Debug\UC-DoubleBoutonImage.pdb
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC-DoubleBoutonImage.csproj.AssemblyReference.cache
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC_DoubleBoutonImage.Properties.Resources.resources
-C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC_DoubleBoutonImage.UserControl1.resources
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC-DoubleBoutonImage.csproj.GenerateResource.cache
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC-DoubleBoutonImage.csproj.CoreCompileInputs.cache
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC-DoubleBoutonImage.dll
 C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC-DoubleBoutonImage.pdb
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\UC-DoubleBoutonImage\UC-DoubleBoutonImage\obj\Debug\UC_DoubleBoutonImage.UC_DoubleBouton.resources

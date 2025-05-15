@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UC_DoubleBoutonImage
 {
-    public partial class UserControl1: UserControl
+    public partial class UC_DoubleBouton: UserControl
     {
-        public UserControl1()
+        public UC_DoubleBouton()
         {
             InitializeComponent();
         }
@@ -29,6 +29,31 @@ namespace UC_DoubleBoutonImage
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void pctbClotureMission_MouseEnter(object sender, EventArgs e)
+        {
+            pctbClotureMission.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pctbEditionPdf_MouseMove(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void pctbClotureMission_MouseLeave(object sender, EventArgs e)
+        {
+            pctbClotureMission.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void pctbEditionPdf_MouseLeave(object sender, EventArgs e)
+        {
+            pctbEditionPdf.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void pctbEditionPdf_MouseEnter(object sender, EventArgs e)
+        {
+            pctbEditionPdf.BorderStyle = BorderStyle.Fixed3D;
 
         }
     }

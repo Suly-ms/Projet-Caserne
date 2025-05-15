@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UC_RecapMission
 {
-    public partial class UserControl1: UserControl
+    public partial class UC_AffichageMission: UserControl
     {
-        public UserControl1()
+        public UC_AffichageMission()
         {
             InitializeComponent();
         }
