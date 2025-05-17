@@ -49,6 +49,8 @@
             this.pctbClotureMission.Click += new System.EventHandler(this.pctbClotureMission_Click);
             this.pctbClotureMission.MouseEnter += new System.EventHandler(this.pctbClotureMission_MouseEnter);
             this.pctbClotureMission.MouseLeave += new System.EventHandler(this.pctbClotureMission_MouseLeave);
+            this.pctbClotureMission.MouseHover += new System.EventHandler(this.pctbClotureMission_MouseHover);
+            this.pctbClotureMission.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pctbClotureMission_MouseMove);
             // 
             // pctbEditionPdf
             // 

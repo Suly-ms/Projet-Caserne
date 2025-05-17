@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.pnlTableauBord = new System.Windows.Forms.Panel();
+            this.btnNouvelleMission = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlMission = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnNouvelleMission = new System.Windows.Forms.Button();
+            this.pnlMission = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlTableauBord.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,17 @@
             this.pnlTableauBord.Size = new System.Drawing.Size(875, 82);
             this.pnlTableauBord.TabIndex = 2;
             this.pnlTableauBord.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTableauBord_Paint);
+            // 
+            // btnNouvelleMission
+            // 
+            this.btnNouvelleMission.BackColor = System.Drawing.Color.Red;
+            this.btnNouvelleMission.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNouvelleMission.Location = new System.Drawing.Point(613, 10);
+            this.btnNouvelleMission.Name = "btnNouvelleMission";
+            this.btnNouvelleMission.Size = new System.Drawing.Size(159, 40);
+            this.btnNouvelleMission.TabIndex = 9;
+            this.btnNouvelleMission.Text = "Nouvelle mission";
+            this.btnNouvelleMission.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -100,15 +112,6 @@
             this.panel2.Size = new System.Drawing.Size(222, 629);
             this.panel2.TabIndex = 3;
             // 
-            // pnlMission
-            // 
-            this.pnlMission.AutoScroll = true;
-            this.pnlMission.BackColor = System.Drawing.Color.PapayaWhip;
-            this.pnlMission.Location = new System.Drawing.Point(245, 21);
-            this.pnlMission.Name = "pnlMission";
-            this.pnlMission.Size = new System.Drawing.Size(908, 629);
-            this.pnlMission.TabIndex = 7;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(15, 10);
@@ -118,16 +121,24 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnNouvelleMission
+            // pnlMission
             // 
-            this.btnNouvelleMission.BackColor = System.Drawing.Color.Red;
-            this.btnNouvelleMission.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNouvelleMission.Location = new System.Drawing.Point(613, 10);
-            this.btnNouvelleMission.Name = "btnNouvelleMission";
-            this.btnNouvelleMission.Size = new System.Drawing.Size(159, 40);
-            this.btnNouvelleMission.TabIndex = 9;
-            this.btnNouvelleMission.Text = "Nouvelle mission";
-            this.btnNouvelleMission.UseVisualStyleBackColor = false;
+            this.pnlMission.AutoScroll = true;
+            this.pnlMission.BackColor = System.Drawing.Color.PapayaWhip;
+            this.pnlMission.Location = new System.Drawing.Point(245, 21);
+            this.pnlMission.Name = "pnlMission";
+            this.pnlMission.Size = new System.Drawing.Size(908, 629);
+            this.pnlMission.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1165, 662);
+            this.panel1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -139,6 +150,7 @@
             this.Controls.Add(this.pnlTableauBord);
             this.Controls.Add(this.pnlMission);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -160,6 +172,7 @@
         private System.Windows.Forms.Panel pnlMission;
         private System.Windows.Forms.Button btnNouvelleMission;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

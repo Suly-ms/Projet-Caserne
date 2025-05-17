@@ -34,6 +34,7 @@ namespace SAE_A21_D21___Projet_Caserne
                 SQLiteDataAdapter da = new SQLiteDataAdapter(requete, connec);
 
                 da.Fill(MesDatas.DsGlobal, ligne[2].ToString());
+
             }
             Connexion.FermerConnexion();
         }
@@ -41,18 +42,46 @@ namespace SAE_A21_D21___Projet_Caserne
         private void Form1_Load(object sender, EventArgs e)
         {
             int hauteur = 101;
-            for (int i = 0; i < 20; i++)
+
+            DataTable tableMissions = MesDatas.DsGlobal.Tables["Mission"];
+            DataTable tableCaserne = MesDatas.DsGlobal.Tables["Caserne"];
+
+
+            foreach (DataRow ligne in tableMissions.Rows)
             {
+                int id = Convert.ToInt16(ligne["id"]);
+                DateTime date = Convert.ToDateTime(ligne["dateHeureDepart"]);
+                string motif = ligne["motifAppel"].ToString();
+                string rendu = ligne["compteRendu"].ToString();
+
+
+                int idCaserne = Convert.ToInt16(ligne["idCaserne"]);
+
+                // Chercher le nom de la caserne manuellement
+                string nomCaserne = "";
+                int i = 0;
+
+                while (nomCaserne == "")
+                {
+                    DataRow caserne = tableCaserne.Rows[i];
+                    int idCaserneCourante = Convert.ToInt16(caserne["id"]);
+                    if (idCaserneCourante == idCaserne)
+                    {
+                        nomCaserne = caserne["nom"].ToString();
+                    }
+
+                    i++;
+                }
 
                 // Ajout du UC mission dans le panel 
-                UC_AffichageMission mission = new UC_AffichageMission();
-                mission.Location = new Point(83, hauteur);
+                UC_AffichageMission mission = new UC_AffichageMission(id, date, nomCaserne, motif, rendu);
+                mission.Location = new Point(55, hauteur);
                 mission.BorderStyle = BorderStyle.FixedSingle;
                 pnlMission.Controls.Add(mission);
 
                 // Ajout UC double bouton dans le panel
                 UC_DoubleBouton dblBtn = new UC_DoubleBouton();
-                dblBtn.Location = new Point(750, hauteur);
+                dblBtn.Location = new Point(795, hauteur);
                 pnlMission.Controls.Add(dblBtn);
 
                 hauteur += 120;
