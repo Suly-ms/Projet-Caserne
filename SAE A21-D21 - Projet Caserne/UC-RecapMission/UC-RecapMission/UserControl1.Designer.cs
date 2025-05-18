@@ -35,6 +35,7 @@
             this.lblDateDepart = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblId = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.lblCaserne.AutoSize = true;
             this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.lblCaserne.ForeColor = System.Drawing.Color.Brown;
-            this.lblCaserne.Location = new System.Drawing.Point(409, 5);
+            this.lblCaserne.Location = new System.Drawing.Point(371, 5);
             this.lblCaserne.Name = "lblCaserne";
             this.lblCaserne.Size = new System.Drawing.Size(224, 18);
             this.lblCaserne.TabIndex = 11;
@@ -76,7 +77,7 @@
             this.lblDateDepart.AutoSize = true;
             this.lblDateDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.lblDateDepart.ForeColor = System.Drawing.Color.Brown;
-            this.lblDateDepart.Location = new System.Drawing.Point(228, 5);
+            this.lblDateDepart.Location = new System.Drawing.Point(212, 5);
             this.lblDateDepart.Name = "lblDateDepart";
             this.lblDateDepart.Size = new System.Drawing.Size(138, 18);
             this.lblDateDepart.TabIndex = 10;
@@ -103,11 +104,23 @@
             this.lblId.TabIndex = 8;
             this.lblId.Text = "Mission n°";
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblStatus.ForeColor = System.Drawing.Color.Brown;
+            this.lblStatus.Location = new System.Drawing.Point(643, 5);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(68, 18);
+            this.lblStatus.TabIndex = 14;
+            this.lblStatus.Text = "En cours";
+            // 
             // UC_AffichageMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblCompteRendu);
             this.Controls.Add(this.lblMotif);
             this.Controls.Add(this.lblCaserne);
@@ -131,5 +144,6 @@
         private System.Windows.Forms.Label lblDateDepart;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label lblStatus;
     }
 }

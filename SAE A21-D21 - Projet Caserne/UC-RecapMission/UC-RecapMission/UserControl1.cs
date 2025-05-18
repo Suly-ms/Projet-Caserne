@@ -17,8 +17,9 @@ namespace UC_RecapMission
         private string m_caserne;
         private string m_motif;
         private string m_rendu;
+        private bool m_status;
 
-        public UC_AffichageMission(int id, DateTime date, string caserne, string motif, string rendu)
+        public UC_AffichageMission(int id, DateTime date, string caserne, string motif, string rendu, bool status)
         {
             InitializeComponent();
 
@@ -27,12 +28,14 @@ namespace UC_RecapMission
             m_caserne = caserne;
             m_motif = motif;
             m_rendu = rendu;
+            m_status = status;
 
             lblId.Text = $"Mission n° {id}";
             lblDateDepart.Text = $"Début le {date.Day}/{date.Month}/{date.Year}";
             lblCaserne.Text = $"Caserne : {caserne}";
             lblMotif.Text = motif;
             lblCompteRendu.Text = $"--> {(rendu == "" ? "Aucun compte rendu" : rendu)}";
+            lblStatus.Text = status ? "Terminée" : "En cours";
 
         }
 

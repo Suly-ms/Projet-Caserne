@@ -12,9 +12,13 @@ namespace UC_DoubleBoutonImage
 {
     public partial class UC_DoubleBouton: UserControl
     {
-        public UC_DoubleBouton()
+        private int m_idMission;
+
+        public UC_DoubleBouton(int idMission)
         {
             InitializeComponent();
+
+            m_idMission = idMission;
         }
 
         private void pctbClotureMission_Click(object sender, EventArgs e)

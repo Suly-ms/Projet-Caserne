@@ -33,7 +33,7 @@
             this.pnlTableauBord = new System.Windows.Forms.Panel();
             this.btnNouvelleMission = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckbEnCours = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.pnlTableauBord.BackColor = System.Drawing.Color.PapayaWhip;
             this.pnlTableauBord.Controls.Add(this.btnNouvelleMission);
             this.pnlTableauBord.Controls.Add(this.panel3);
-            this.pnlTableauBord.Controls.Add(this.checkBox1);
+            this.pnlTableauBord.Controls.Add(this.ckbEnCours);
             this.pnlTableauBord.Controls.Add(this.label1);
             this.pnlTableauBord.Location = new System.Drawing.Point(248, 21);
             this.pnlTableauBord.Name = "pnlTableauBord";
@@ -80,17 +80,18 @@
             this.panel3.Size = new System.Drawing.Size(719, 4);
             this.panel3.TabIndex = 4;
             // 
-            // checkBox1
+            // ckbEnCours
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.checkBox1.Location = new System.Drawing.Point(116, 24);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 22);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "En cours";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ckbEnCours.AutoSize = true;
+            this.ckbEnCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbEnCours.ForeColor = System.Drawing.Color.Firebrick;
+            this.ckbEnCours.Location = new System.Drawing.Point(116, 24);
+            this.ckbEnCours.Name = "ckbEnCours";
+            this.ckbEnCours.Size = new System.Drawing.Size(95, 22);
+            this.ckbEnCours.TabIndex = 3;
+            this.ckbEnCours.Text = "En cours";
+            this.ckbEnCours.UseVisualStyleBackColor = true;
+            this.ckbEnCours.CheckedChanged += new System.EventHandler(this.ckbEnCours_CheckedChanged);
             // 
             // label1
             // 
@@ -167,7 +168,7 @@
         private System.Windows.Forms.Panel pnlTableauBord;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox ckbEnCours;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlMission;
         private System.Windows.Forms.Button btnNouvelleMission;
