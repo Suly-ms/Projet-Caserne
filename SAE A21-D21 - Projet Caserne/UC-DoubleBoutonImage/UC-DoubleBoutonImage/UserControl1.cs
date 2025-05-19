@@ -38,33 +38,37 @@ namespace UC_DoubleBoutonImage
 
         private void pctbClotureMission_MouseEnter(object sender, EventArgs e)
         {
+            pctbClotureMission.BorderStyle = BorderStyle.Fixed3D;
         }
 
         private void pctbEditionPdf_MouseMove(object sender, MouseEventArgs e)
         {
-            pctbEditionPdf.BorderStyle = BorderStyle.Fixed3D;
+            
         }
 
         private void pctbClotureMission_MouseLeave(object sender, EventArgs e)
         {
+            pctbClotureMission.BorderStyle = BorderStyle.FixedSingle;
         }
 
         private void pctbEditionPdf_MouseLeave(object sender, EventArgs e)
         {
+            pctbEditionPdf.BorderStyle = BorderStyle.FixedSingle;
         }
 
         private void pctbEditionPdf_MouseEnter(object sender, EventArgs e)
         {
+            pctbEditionPdf.BorderStyle = BorderStyle.Fixed3D;
         }
 
         private void pctbClotureMission_MouseHover(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pctbClotureMission_MouseMove(object sender, MouseEventArgs e)
         {
-            pctbClotureMission.BorderStyle = BorderStyle.Fixed3D;
+            
 
         }
     }

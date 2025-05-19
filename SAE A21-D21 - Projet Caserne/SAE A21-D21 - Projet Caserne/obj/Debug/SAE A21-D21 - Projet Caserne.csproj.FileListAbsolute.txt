@@ -29,3 +29,18 @@ C:\Users\josue\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Pr
 C:\Users\josue\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-.CCC722CA.Up2Date
 C:\Users\josue\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.exe
 C:\Users\josue\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.exe.config
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.exe
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\System.Data.SQLite.dll
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\System.Data.SQLite.xml
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\UC-DoubleBoutonImage.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\UC-RecapMission.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.AssemblyReference.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.Form1.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.Properties.Resources.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.GenerateResource.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.CoreCompileInputs.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-.CCC722CA.Up2Date
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.exe
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.pdb

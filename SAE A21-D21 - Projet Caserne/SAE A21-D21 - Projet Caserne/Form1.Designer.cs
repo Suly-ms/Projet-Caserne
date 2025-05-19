@@ -63,9 +63,10 @@
             // 
             // btnNouvelleMission
             // 
-            this.btnNouvelleMission.BackColor = System.Drawing.Color.Red;
+            this.btnNouvelleMission.BackColor = System.Drawing.Color.Transparent;
+            this.btnNouvelleMission.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnNouvelleMission.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNouvelleMission.Location = new System.Drawing.Point(613, 10);
+            this.btnNouvelleMission.Location = new System.Drawing.Point(615, 12);
             this.btnNouvelleMission.Name = "btnNouvelleMission";
             this.btnNouvelleMission.Size = new System.Drawing.Size(159, 40);
             this.btnNouvelleMission.TabIndex = 9;
@@ -153,6 +154,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlTableauBord.ResumeLayout(false);
