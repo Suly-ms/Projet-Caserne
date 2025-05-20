@@ -14,6 +14,8 @@ namespace UC_DoubleBoutonImage
     {
         private int m_idMission;
 
+        public event EventHandler<string> BoutonClique;
+
         public UC_DoubleBouton(int idMission)
         {
             InitializeComponent();
@@ -21,19 +23,24 @@ namespace UC_DoubleBoutonImage
             m_idMission = idMission;
         }
 
+        public int getId()
+        {
+            return m_idMission;
+        }
+
         private void pctbClotureMission_Click(object sender, EventArgs e)
         {
-
+            BoutonClique.Invoke(this, "ClotureMission");
         }
 
         private void pctbEditionPdf_Click(object sender, EventArgs e)
         {
-
+            BoutonClique.Invoke(this, "EditionPdf");
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pctbClotureMission_MouseEnter(object sender, EventArgs e)

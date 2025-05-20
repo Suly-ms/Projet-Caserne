@@ -49,6 +49,26 @@ namespace UC_RecapMission
             return m_date;
         }
 
+        public string getCaserne()
+        {
+            return m_caserne;
+        }
+
+        public string getMotif()
+        {
+            return m_motif;
+        }
+
+        public string getRendu()
+        {
+            return m_rendu;
+        }
+
+        public bool getStatus()
+        {
+            return m_status;
+        }
+
         private void UC_AffichageMission_Load(object sender, EventArgs e)
         {
 

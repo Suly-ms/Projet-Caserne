@@ -36,9 +36,12 @@
             this.ckbEnCours = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlMission = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txbEnCours = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlTableauBord.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +54,8 @@
             // pnlTableauBord
             // 
             this.pnlTableauBord.BackColor = System.Drawing.Color.PapayaWhip;
+            this.pnlTableauBord.Controls.Add(this.label2);
+            this.pnlTableauBord.Controls.Add(this.txbEnCours);
             this.pnlTableauBord.Controls.Add(this.btnNouvelleMission);
             this.pnlTableauBord.Controls.Add(this.panel3);
             this.pnlTableauBord.Controls.Add(this.ckbEnCours);
@@ -66,7 +71,7 @@
             this.btnNouvelleMission.BackColor = System.Drawing.Color.Transparent;
             this.btnNouvelleMission.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnNouvelleMission.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNouvelleMission.Location = new System.Drawing.Point(615, 12);
+            this.btnNouvelleMission.Location = new System.Drawing.Point(668, 14);
             this.btnNouvelleMission.Name = "btnNouvelleMission";
             this.btnNouvelleMission.Size = new System.Drawing.Size(159, 40);
             this.btnNouvelleMission.TabIndex = 9;
@@ -108,11 +113,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.Controls.Add(this.btnQuitter);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(12, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 629);
             this.panel2.TabIndex = 3;
+            // 
+            // btnQuitter
+            // 
+            this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.btnQuitter.Location = new System.Drawing.Point(15, 573);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(189, 40);
+            this.btnQuitter.TabIndex = 9;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // button1
             // 
@@ -141,6 +158,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1165, 662);
             this.panel1.TabIndex = 8;
+            // 
+            // txbEnCours
+            // 
+            this.txbEnCours.Location = new System.Drawing.Point(17, 45);
+            this.txbEnCours.Name = "txbEnCours";
+            this.txbEnCours.Size = new System.Drawing.Size(28, 20);
+            this.txbEnCours.TabIndex = 10;
+            this.txbEnCours.TextChanged += new System.EventHandler(this.txbEnCours_TextChanged);
+            this.txbEnCours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbEnCours_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.label2.Location = new System.Drawing.Point(0, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 12);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Enlever terminée";
             // 
             // Form1
             // 
@@ -176,6 +212,9 @@
         private System.Windows.Forms.Button btnNouvelleMission;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnQuitter;
+        private System.Windows.Forms.TextBox txbEnCours;
+        private System.Windows.Forms.Label label2;
     }
 }
 
