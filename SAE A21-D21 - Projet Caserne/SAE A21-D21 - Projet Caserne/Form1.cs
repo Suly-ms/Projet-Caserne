@@ -114,10 +114,20 @@ namespace SAE_A21_D21___Projet_Caserne
             return missions[0]["idCaserne"].ToString();
         }
 
+        private int TrouverIdSinistre(int idMission)
+        {
+            DataTable tableMission = MesDatas.DsGlobal.Tables["Mission"];
+            DataRow[] missions = tableMission.Select($"id = {idMission}");
+
+            return Convert.ToInt16(missions[0]["idNatureSinistre"]);
+        }
+
         private string TrouverSinistre(int idMission)
         {
+            int idSinistre = TrouverIdSinistre(idMission);
+
             DataTable tableSinistre = MesDatas.DsGlobal.Tables["NatureSinistre"];
-            DataRow[] sinistres = tableSinistre.Select($"id = {idMission}");
+            DataRow[] sinistres = tableSinistre.Select($"id = {idSinistre}");
 
             return sinistres[0]["libelle"].ToString();
         }
@@ -135,7 +145,15 @@ namespace SAE_A21_D21___Projet_Caserne
             DataTable tableMissions = MesDatas.DsGlobal.Tables["Mission"];
             DataRow[] missions = tableMissions.Select($"id = {idMission}");
 
-            return Convert.ToDateTime(missions[0]["dateHeureRetour"]);
+            try
+            {
+                return Convert.ToDateTime(missions[0]["dateHeureRetour"]);
+            }
+
+            catch (Exception)
+            {
+                return DateTime.MinValue;
+            }
         }
 
         private string TrouverMotif(int idMission)
@@ -154,7 +172,7 @@ namespace SAE_A21_D21___Projet_Caserne
             return missions[0]["compteRendu"].ToString();
         }
 
-        private bool TrouverStatus(int idMission)
+        private bool EstTerminee(int idMission)
         {
             DataTable tableMissions = MesDatas.DsGlobal.Tables["Mission"];
             DataRow[] missions = tableMissions.Select($"id = {idMission}");
@@ -167,7 +185,28 @@ namespace SAE_A21_D21___Projet_Caserne
             DataTable tableMissions = MesDatas.DsGlobal.Tables["Mission"];
             DataRow[] missions = tableMissions.Select($"id = {idMission}");
 
-            return Convert.ToString(missions[0]["adresse"]);
+            string adresse = Convert.ToString(missions[0]["adresse"]);
+            string ville = Convert.ToString(missions[0]["ville"]);
+            string codePostal = Convert.ToString(missions[0]["cp"]);
+
+            string res = "";
+
+            if (adresse != "")
+            {
+                res += adresse;
+            }
+
+            if (ville != "")
+            {
+                res += $"{(res == "" ? "" : ", ") + ville} ";
+            }
+
+            if (codePostal != "")
+            {
+                res += $"({codePostal})";
+            }
+
+            return res;
         }
 
         private int[] TrouverMatriculesPompier(int idMission)
@@ -203,6 +242,14 @@ namespace SAE_A21_D21___Projet_Caserne
             return Convert.ToString(habilitations[0]["libelle"]);
         }
 
+        private string TrouverGrade(string codeGrade)
+        {
+            DataTable tableGrades = MesDatas.DsGlobal.Tables["Grade"];
+            DataRow[] grades = tableGrades.Select($"code = '{codeGrade}'");
+
+            return Convert.ToString(grades[0]["libelle"]);
+        }
+
         private string[] TrouverPompiersAffectes(int idMission)
         {
             int[] matricules = TrouverMatriculesPompier(idMission);
@@ -214,18 +261,36 @@ namespace SAE_A21_D21___Projet_Caserne
                 DataRow[] tmp = tablePompiers.Select($"matricule = {matricules[i]}");
 
                 DataRow row = tmp[0];
-                pompiers[i] = $"{TrouverGrade(row["codeGrade"].ToString())} {row["nom"]} {row["prenom"]} ({TrouverHabilitation(Convert.ToInt16(row["matricule"]))})";
+                pompiers[i] = $"{TrouverGrade(row["codeGrade"].ToString())} {row["nom"].ToString().ToUpper()} {row["prenom"].ToString()} ({TrouverHabilitation(Convert.ToInt16(row["matricule"]))})";
             }
 
             return pompiers;
         }
 
-        private string TrouverGrade(string codeGrade)
+        private string TrouverNomEngin(string code)
         {
-            DataTable tableGrades = MesDatas.DsGlobal.Tables["Grade"];
-            DataRow[] grades = tableGrades.Select($"code = '{codeGrade}'");
+            DataTable tableTypeEngin = MesDatas.DsGlobal.Tables["TypeEngin"];
+            DataRow[] type = tableTypeEngin.Select($"code = '{code}'");
 
-            return Convert.ToString(grades[0]["libelle"]);
+            return type[0]["nom"].ToString();
+        }
+
+        private string[] TrouverEnginsUtilises(int idMission)
+        {
+            DataTable tablePartir = MesDatas.DsGlobal.Tables["PartirAvec"];
+            DataRow[] partir = tablePartir.Select($"idMission = {idMission}");
+
+            string[] engins = new string[partir.Length];
+
+            for (int i = 0; i < partir.Length; i++)
+            {
+                string reparation = partir[i]["reparationsEventuelles"].ToString() == "" ? "Pas de réparations prévues" : partir[i]["reparationsEventuelles"].ToString();
+                string codeEngin = partir[i]["codeTypeEngin"].ToString();
+
+                engins[i] = $"{TrouverNomEngin(codeEngin)} {partir[i]["idCaserne"]}-{codeEngin}-{partir[i]["numeroEngin"]} ({reparation})";
+            }
+
+            return engins;
         }
 
         private void ckbEnCours_CheckedChanged(object sender, EventArgs e)
@@ -243,10 +308,10 @@ namespace SAE_A21_D21___Projet_Caserne
             DateTime dateDepartMission = TrouverDateDepart(idMission);
             DateTime dateRetourMission = TrouverDateRetour(idMission);
             string caserneMission = TrouverCaserne(idMission);
-            string motifMission = TrouverMotif(idMission);
+            string motifMission = TrouverMotif(idMission) == "" ? "Aucun motif renseigné" : TrouverMotif(idMission);
             string renduMission = TrouverRendu(idMission) == "" ? "Aucun compte rendu" : TrouverRendu(idMission);
-            string statusMission = TrouverStatus(idMission) ? "Terminée" : "En cours";
-            string adresseMission = TrouverAdresse(idMission);
+            string statusMission = EstTerminee(idMission) ? "Terminée" : "En cours";
+            string adresseMission = TrouverAdresse(idMission) == "" ? "Aucune adresse renseignée" : TrouverAdresse(idMission);
             string sinistreMission = TrouverSinistre(idMission);
 
             // Declaration du chemin du fichier PDF
@@ -259,42 +324,61 @@ namespace SAE_A21_D21___Projet_Caserne
 
             pdf.Open();
 
-            Font titreFont = FontFactory.GetFont("Arial" /*Police*/ , 20 /*Taille*/ , 1 /*Gras*/);
-            Font basiqueFont = FontFactory.GetFont("Arial" /*Police*/ , 12 /*Taille*/ , 0 /*Normal*/);
+            Font titreFont = FontFactory.GetFont("Arial" /*Police*/ , 23 /*Taille*/ , 1 /*Gras*/);
+            Font partieFont = FontFactory.GetFont("Arial" /*Police*/ , 17 /*Taille*/ , 1 /*Gras*/);
+            Font importantFont = FontFactory.GetFont("Arial" /*Police*/ , 14 /*Taille*/ , 1 /*Gras*/);
+            Font normalFont = FontFactory.GetFont("Arial" /*Police*/ , 14 /*Taille*/ , 0 /*Normal*/);
 
             // Ecriture du fichier PDF
-            Paragraph paragraphTitre = new Paragraph($"Rapport de mission\n\n", titreFont);
+            Paragraph paragraphTitre = new Paragraph($"Rapport de mission", titreFont);
+            Paragraph paragraphStatus = new Paragraph($"{statusMission}\n\n", normalFont);
 
-            // Centrer le titre
+            // Centrer le titre et le status
             paragraphTitre.Alignment = Element.ALIGN_CENTER;
+            paragraphStatus.Alignment = Element.ALIGN_CENTER;
 
             // Ajouter le titre au PDF
             pdf.Add(paragraphTitre);
 
-            pdf.Add(new Paragraph($"Déclenchée le {dateDepartMission.Day.ToString("00")}-{dateDepartMission.Month.ToString("00")}-{dateDepartMission.Year.ToString("00")} à {dateDepartMission.Hour.ToString("00")}h{dateDepartMission.Minute.ToString("00")}", basiqueFont));
-            pdf.Add(new Paragraph($"Retour le {dateRetourMission.Day.ToString("00")}-{dateRetourMission.Month.ToString("00")}-{dateRetourMission.Year.ToString("00")} à {dateRetourMission.Hour.ToString("00")}h{dateRetourMission.Minute.ToString("00")}", basiqueFont));
-            pdf.Add(new Paragraph($"--------------------------------------------------------------------------------------------------------------------------------\n\n", basiqueFont));
-            pdf.Add(new Paragraph($"Type de sinistre : {sinistreMission}\n", basiqueFont));
-            pdf.Add(new Paragraph($"Motif : {motifMission}", basiqueFont));
-            pdf.Add(new Paragraph($"Adresse : {adresseMission}\n\n", basiqueFont));
-            pdf.Add(new Paragraph($"Compte-rendu : {renduMission}", basiqueFont));
-            pdf.Add(new Paragraph($"--------------------------------------------------------------------------------------------------------------------------------\n\n", basiqueFont));
-            pdf.Add(new Paragraph($"Caserne : {caserneMission}\n\n", basiqueFont));
-            pdf.Add(new Paragraph($"Pompiers affectés :", basiqueFont));
+            // Ajouter el status au PDF
+            pdf.Add(paragraphStatus);
 
+            pdf.Add(new Paragraph($"Déclenchée le {dateDepartMission.Day.ToString("00")}-{dateDepartMission.Month.ToString("00")}-{dateDepartMission.Year.ToString("00")} à {dateDepartMission.Hour.ToString("00")}h{dateDepartMission.Minute.ToString("00")}", importantFont));
+
+            // Verification de si il y a une date de retour
+            if (dateRetourMission != DateTime.MinValue)
+            {
+                pdf.Add(new Paragraph($"Retour le {dateRetourMission.Day.ToString("00")}-{dateRetourMission.Month.ToString("00")}-{dateRetourMission.Year.ToString("00")} à {dateRetourMission.Hour.ToString("00")}h{dateRetourMission.Minute.ToString("00")}", importantFont));
+            }
+            else
+            {
+                pdf.Add(new Paragraph($"Pas encore de date de retour car la mission est en cours", importantFont));
+            }
+            
+            pdf.Add(new Paragraph($"----------------------------------------------------------------------------------------------------------------\n\n", importantFont));
+            pdf.Add(new Paragraph($"Type de sinistre : {sinistreMission}\n\n", partieFont));
+            pdf.Add(new Paragraph($"Motif : {motifMission}", importantFont));
+            pdf.Add(new Paragraph($"Adresse : {adresseMission}\n\n", importantFont));
+            pdf.Add(new Paragraph($"Compte-rendu : {renduMission}", importantFont));
+            pdf.Add(new Paragraph($"----------------------------------------------------------------------------------------------------------------\n\n", importantFont));
+            pdf.Add(new Paragraph($"Caserne : {caserneMission}\n\n", partieFont));
+
+
+            // Remplir les pompiers affectés dans le PDF
+            pdf.Add(new Paragraph($"Pompiers affectés :", partieFont));
             string[] pompiers = TrouverPompiersAffectes(idMission);
             foreach(string pompier in pompiers)
             {
-                pdf.Add(new Paragraph($"--> {pompier}", basiqueFont));
+                pdf.Add(new Paragraph($"--> {pompier}", normalFont));
             }
 
-            pdf.Add(new Paragraph($"\nEngins utilisés :", basiqueFont));
-
-            /*string engins = TrouverEnginsUtilises(idMission);
+            // Remplir les engins utilisés dans le PDF
+            pdf.Add(new Paragraph($"\nEngins utilisés :", partieFont));
+            string[] engins = TrouverEnginsUtilises(idMission);
             foreach (string engin in engins)
             {
-                pdf.Add(new Paragraph($"--> {engin}", basiqueFont));
-            } */
+                pdf.Add(new Paragraph($"--> {engin}", normalFont));
+            } 
 
             pdf.Close();
         }
@@ -354,7 +438,7 @@ namespace SAE_A21_D21___Projet_Caserne
                             MessageBox.Show($"La mission n°{idMission} est achevée et son PDF à été généré");
                         }
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         MessageBox.Show("Erreur lors de la mise à jour");
                     }
@@ -423,7 +507,7 @@ namespace SAE_A21_D21___Projet_Caserne
                         MessageBox.Show($"La mission n°{txbEnCours.Text} est pas finie");
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Erreur lors de la mise à jour");
                 }
@@ -434,6 +518,11 @@ namespace SAE_A21_D21___Projet_Caserne
         }
         private void pnlTableauBord_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
