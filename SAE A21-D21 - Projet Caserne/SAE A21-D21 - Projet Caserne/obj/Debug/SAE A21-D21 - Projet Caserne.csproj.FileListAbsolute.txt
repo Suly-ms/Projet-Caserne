@@ -37,10 +37,14 @@ C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet C
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\UC-DoubleBoutonImage.pdb
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\UC-RecapMission.pdb
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.AssemblyReference.cache
-C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.Form1.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.Properties.Resources.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.GenerateResource.cache
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.CoreCompileInputs.cache
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-.CCC722CA.Up2Date
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.exe
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.frmTableauDeBord.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\itextsharp.dll
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\bin\Debug\itextsharp.xml

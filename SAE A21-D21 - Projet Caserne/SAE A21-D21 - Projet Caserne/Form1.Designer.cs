@@ -1,6 +1,6 @@
 ﻿namespace SAE_A21_D21___Projet_Caserne
 {
-    partial class Form1
+    partial class frmTableauDeBord
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableauDeBord));
             this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.pnlTableauBord = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbEnCours = new System.Windows.Forms.TextBox();
             this.btnNouvelleMission = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ckbEnCours = new System.Windows.Forms.CheckBox();
@@ -40,8 +42,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pnlMission = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbEnCours = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnlTableauBord.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,25 @@
             this.pnlTableauBord.Size = new System.Drawing.Size(875, 82);
             this.pnlTableauBord.TabIndex = 2;
             this.pnlTableauBord.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTableauBord_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.label2.Location = new System.Drawing.Point(0, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 12);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Enlever terminée";
+            // 
+            // txbEnCours
+            // 
+            this.txbEnCours.Location = new System.Drawing.Point(17, 45);
+            this.txbEnCours.Name = "txbEnCours";
+            this.txbEnCours.Size = new System.Drawing.Size(28, 20);
+            this.txbEnCours.TabIndex = 10;
+            this.txbEnCours.TextChanged += new System.EventHandler(this.txbEnCours_TextChanged);
+            this.txbEnCours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbEnCours_KeyPress);
             // 
             // btnNouvelleMission
             // 
@@ -159,26 +178,7 @@
             this.panel1.Size = new System.Drawing.Size(1165, 662);
             this.panel1.TabIndex = 8;
             // 
-            // txbEnCours
-            // 
-            this.txbEnCours.Location = new System.Drawing.Point(17, 45);
-            this.txbEnCours.Name = "txbEnCours";
-            this.txbEnCours.Size = new System.Drawing.Size(28, 20);
-            this.txbEnCours.TabIndex = 10;
-            this.txbEnCours.TextChanged += new System.EventHandler(this.txbEnCours_TextChanged);
-            this.txbEnCours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbEnCours_KeyPress);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-            this.label2.Location = new System.Drawing.Point(0, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 12);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Enlever terminée";
-            // 
-            // Form1
+            // frmTableauDeBord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,9 +189,9 @@
             this.Controls.Add(this.pnlMission);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "frmTableauDeBord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Tableau de bord";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlTableauBord.ResumeLayout(false);
             this.pnlTableauBord.PerformLayout();

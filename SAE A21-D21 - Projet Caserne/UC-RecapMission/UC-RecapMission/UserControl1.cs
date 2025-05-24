@@ -31,7 +31,7 @@ namespace UC_RecapMission
             m_status = status;
 
             lblId.Text = $"Mission n° {id}";
-            lblDateDepart.Text = $"Début le {date.Day}/{date.Month}/{date.Year}";
+            lblDateDepart.Text = $"Début le {date.Day.ToString("00")}/{date.Month.ToString("00")}/{date.Year.ToString("00")}";
             lblCaserne.Text = $"Caserne : {caserne}";
             lblMotif.Text = motif;
             lblCompteRendu.Text = $"--> {(rendu == "" ? "Aucun compte rendu" : rendu)}";
