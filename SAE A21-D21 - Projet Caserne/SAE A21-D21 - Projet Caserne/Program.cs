@@ -16,7 +16,7 @@ namespace SAE_A21_D21___Projet_Caserne
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTableauDeBord());
+            Application.Run(new FrmTableauDeBord());
         }
     }
 }

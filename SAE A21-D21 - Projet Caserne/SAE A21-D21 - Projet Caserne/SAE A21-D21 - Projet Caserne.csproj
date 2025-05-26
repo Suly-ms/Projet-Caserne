@@ -66,17 +66,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmTableauBord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmTableauBord.Designer.cs">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDommageEngin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDommageEngin.Designer.cs">
+      <DependentUpon>FrmDommageEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompteRendu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompteRendu.Designer.cs">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
     </Compile>
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UC_AffichageEngin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AffichageEngin.Designer.cs">
+      <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmTableauBord.resx">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDommageEngin.resx">
+      <DependentUpon>FrmDommageEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompteRendu.resx">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_AffichageEngin.resx">
+      <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

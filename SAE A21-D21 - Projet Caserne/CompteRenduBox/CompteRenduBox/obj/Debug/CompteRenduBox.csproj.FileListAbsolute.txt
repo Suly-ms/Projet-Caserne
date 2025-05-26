@@ -1,0 +1,17 @@
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\bin\Debug\CompteRenduBox.exe.config
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\bin\Debug\CompteRenduBox.exe
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\bin\Debug\CompteRenduBox.pdb
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.AssemblyReference.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.FrmCompteRenduBox.resources
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.Properties.Resources.resources
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.GenerateResource.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.CoreCompileInputs.cache
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.exe
+C:\Users\Josué\Desktop\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.AssemblyReference.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.FrmCompteRenduBox.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.Properties.Resources.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.GenerateResource.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.csproj.CoreCompileInputs.cache
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.exe
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\CompteRenduBox\CompteRenduBox\obj\Debug\CompteRenduBox.pdb
