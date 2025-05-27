@@ -1,6 +1,6 @@
 ﻿namespace SAE_A21_D21___Projet_Caserne
 {
-    partial class frmGestionNouvelleMission
+    partial class FrmGestionNouvelleMission
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

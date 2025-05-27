@@ -16,11 +16,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SAE_A21_D21___Projet_Caserne
 {
-    public partial class frmGestionNouvelleMission : Form
+    public partial class FrmGestionNouvelleMission : Form
     {
         private DataSet pompierVehiculeMission;
         private int numeroMission;
-        public frmGestionNouvelleMission()
+        public FrmGestionNouvelleMission()
         {
             InitializeComponent();
         }
