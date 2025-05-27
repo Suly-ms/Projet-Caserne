@@ -55,22 +55,28 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="UC-DoubleBoutonImage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="UserControlChoixPompier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\UC-DoubleBoutonImage.dll</HintPath>
+      <HintPath>bin\Debug\UserControlChoixPompier.dll</HintPath>
     </Reference>
-    <Reference Include="UC-RecapMission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="UserControlChoixVehicules, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\UC-RecapMission.dll</HintPath>
+      <HintPath>bin\Debug\UserControlChoixVehicules.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="FrmTableauBord.cs">
+    <Compile Include="frmChoixVehiculesPompier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTableauBord.Designer.cs">
-      <DependentUpon>FrmTableauBord.cs</DependentUpon>
+    <Compile Include="frmChoixVehiculesPompier.Designer.cs">
+      <DependentUpon>frmChoixVehiculesPompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompteRendu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompteRendu.Designer.cs">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDommageEngin.cs">
       <SubType>Form</SubType>
@@ -78,11 +84,17 @@
     <Compile Include="FrmDommageEngin.Designer.cs">
       <DependentUpon>FrmDommageEngin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCompteRendu.cs">
+    <Compile Include="frmGestionNouvelleMission.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCompteRendu.Designer.cs">
-      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
+    <Compile Include="frmGestionNouvelleMission.Designer.cs">
+      <DependentUpon>frmGestionNouvelleMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableauBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableauBord.Designer.cs">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
     </Compile>
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
@@ -93,14 +105,32 @@
     <Compile Include="UC_AffichageEngin.Designer.cs">
       <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmTableauBord.resx">
-      <DependentUpon>FrmTableauBord.cs</DependentUpon>
+    <Compile Include="UC_RecapMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RecapMission.Designer.cs">
+      <DependentUpon>UC_RecapMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDoubleBoutonImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDoubleBoutonImage.Designer.cs">
+      <DependentUpon>UserDoubleBoutonImage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmChoixVehiculesPompier.resx">
+      <DependentUpon>frmChoixVehiculesPompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompteRendu.resx">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDommageEngin.resx">
       <DependentUpon>FrmDommageEngin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCompteRendu.resx">
-      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
+    <EmbeddedResource Include="frmGestionNouvelleMission.resx">
+      <DependentUpon>frmGestionNouvelleMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableauBord.resx">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +143,12 @@
     </Compile>
     <EmbeddedResource Include="UC_AffichageEngin.resx">
       <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RecapMission.resx">
+      <DependentUpon>UC_RecapMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDoubleBoutonImage.resx">
+      <DependentUpon>UserDoubleBoutonImage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

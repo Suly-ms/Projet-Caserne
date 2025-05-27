@@ -531,5 +531,12 @@ namespace SAE_A21_D21___Projet_Caserne
         {
 
         }
+
+        private void btnNouvelleMission_Click(object sender, EventArgs e)
+        {
+            frmGestionNouvelleMission newFrmNewMission = new frmGestionNouvelleMission();
+            newFrmNewMission.FormClosed += (s, args) => RemplireToutTableauBord();
+            newFrmNewMission.ShowDialog();
+        }
     }
 }
