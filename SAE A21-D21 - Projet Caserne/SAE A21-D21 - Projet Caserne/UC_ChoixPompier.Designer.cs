@@ -1,6 +1,6 @@
-﻿namespace UserControlChoixPompier
+﻿namespace UC_ChoixPompiers
 {
-    partial class UCChoixPompier
+    partial class UC_ChoixPompier
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -38,9 +38,10 @@
             // btnChoisi
             // 
             this.btnChoisi.BackColor = System.Drawing.Color.Red;
-            this.btnChoisi.Location = new System.Drawing.Point(114, 42);
+            this.btnChoisi.Location = new System.Drawing.Point(86, 34);
+            this.btnChoisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnChoisi.Name = "btnChoisi";
-            this.btnChoisi.Size = new System.Drawing.Size(70, 70);
+            this.btnChoisi.Size = new System.Drawing.Size(52, 57);
             this.btnChoisi.TabIndex = 8;
             this.btnChoisi.UseVisualStyleBackColor = false;
             this.btnChoisi.Click += new System.EventHandler(this.btnChoisi_Click);
@@ -50,9 +51,10 @@
             this.lblNom.AutoSize = true;
             this.lblNom.BackColor = System.Drawing.Color.Transparent;
             this.lblNom.ForeColor = System.Drawing.Color.White;
-            this.lblNom.Location = new System.Drawing.Point(34, 137);
+            this.lblNom.Location = new System.Drawing.Point(26, 111);
+            this.lblNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(44, 16);
+            this.lblNom.Size = new System.Drawing.Size(35, 13);
             this.lblNom.TabIndex = 7;
             this.lblNom.Text = "label2";
             // 
@@ -61,23 +63,25 @@
             this.lblGrade.AutoSize = true;
             this.lblGrade.BackColor = System.Drawing.Color.Transparent;
             this.lblGrade.ForeColor = System.Drawing.Color.White;
-            this.lblGrade.Location = new System.Drawing.Point(34, 12);
+            this.lblGrade.Location = new System.Drawing.Point(26, 10);
+            this.lblGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(44, 16);
+            this.lblGrade.Size = new System.Drawing.Size(35, 13);
             this.lblGrade.TabIndex = 6;
             this.lblGrade.Text = "label1";
             // 
             // pbGrade
             // 
-            this.pbGrade.Location = new System.Drawing.Point(15, 42);
+            this.pbGrade.Location = new System.Drawing.Point(11, 34);
+            this.pbGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbGrade.Name = "pbGrade";
-            this.pbGrade.Size = new System.Drawing.Size(80, 80);
+            this.pbGrade.Size = new System.Drawing.Size(60, 65);
             this.pbGrade.TabIndex = 5;
             this.pbGrade.TabStop = false;
             // 
             // UCChoixPompier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnChoisi);
@@ -85,8 +89,10 @@
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.pbGrade);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCChoixPompier";
-            this.Size = new System.Drawing.Size(201, 165);
+            this.Size = new System.Drawing.Size(151, 134);
+            this.Load += new System.EventHandler(this.UC_ChoixPompier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbGrade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

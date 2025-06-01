@@ -83,11 +83,11 @@ C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet C
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.Properties.Resources.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE_A21_D21___Projet_Caserne.UC_AffichageEngin.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UC_RecapMission.UC_AffichageMission.resources
-C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UserControlChoixPompier.UCChoixPompier.resources
-C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UserControlChoixVehicules.UCChoixVehicule.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UC_DoubleBoutonImage.UC_DoubleBouton.resources
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.GenerateResource.cache
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.csproj.CoreCompileInputs.cache
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-.CCC722CA.Up2Date
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.exe
 C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\SAE A21-D21 - Projet Caserne.pdb
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UC_ChoixVehicules.UC_ChoixVehicule.resources
+C:\Users\Josué\Desktop\Cours\BUT1\S2\SAE\A21\sae-a21-d21\SAE A21-D21 - Projet Caserne\SAE A21-D21 - Projet Caserne\obj\Debug\UC_ChoixPompiers.UC_ChoixPompier.resources

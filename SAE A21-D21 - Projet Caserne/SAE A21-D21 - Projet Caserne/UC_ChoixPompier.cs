@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UserControlChoixPompier
+namespace UC_ChoixPompiers
 {
-    public partial class UCChoixPompier: UserControl
+    public partial class UC_ChoixPompier: UserControl
     {
         public event EventHandler<PompierChoisiEventArgs> PompierChoisi;
         public event EventHandler<PompierNonChoisiEventArgs> PompierNonChoisi;
         private string m_nom, m_prenom;
-        public UCChoixPompier()
+        public UC_ChoixPompier()
         {
             InitializeComponent();
         }
@@ -59,6 +59,11 @@ namespace UserControlChoixPompier
             public string Nom { get; set; }
             public string Prenom { get; set; }
             public string Grade { get; set; }
+        }
+
+        private void UC_ChoixPompier_Load(object sender, EventArgs e)
+        {
+
         }
 
         public class PompierNonChoisiEventArgs : EventArgs

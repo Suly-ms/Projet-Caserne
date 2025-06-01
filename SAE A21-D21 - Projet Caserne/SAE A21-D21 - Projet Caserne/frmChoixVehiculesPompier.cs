@@ -9,16 +9,17 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UC_ChoixVehicules;
 using UserControlChoixPompier;
 using UserControlChoixVehicules;
 using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static UserControlChoixPompier.UCChoixPompier;
-using static UserControlChoixVehicules.UCChoixVehicule;
+using static UC_ChoixPompiers.UC_ChoixPompier;
+using static UC_ChoixVehicules.UC_ChoixVehicule;
 
 namespace SAE_A21_D21___Projet_Caserne
 {
-    public partial class frmChoixVehiculesPompier : Form
+    public partial class FrmChoixVehiculesPompier : Form
     {
         private int m_natureSinistre;
         private int m_caserne;
@@ -30,12 +31,12 @@ namespace SAE_A21_D21___Projet_Caserne
         private int lastHabilitation;
         private DataSet pompierVehiculeEnregistre = new DataSet();
         private Dictionary<int, int> habilitationCompteurs = new Dictionary<int, int>();
-        public frmChoixVehiculesPompier()
+        public FrmChoixVehiculesPompier()
         {
             InitializeComponent();
         }
 
-        public frmChoixVehiculesPompier(int natureSinitre, int caserne)
+        public FrmChoixVehiculesPompier(int natureSinitre, int caserne)
         {
             InitializeComponent();
             m_natureSinistre = natureSinitre;
@@ -115,7 +116,7 @@ namespace SAE_A21_D21___Projet_Caserne
                 // Ajouter dans le panel du choix des véhicules, les UC pour chosiir les véhicules
                 for (int i = 0; i < Vehicules.Count; i++)
                 {
-                    var choixVehicule = new UCChoixVehicule
+                    var choixVehicule = new UC_ChoixVehicule
                     {
                         Top = top,
                         Left = left
@@ -264,7 +265,7 @@ namespace SAE_A21_D21___Projet_Caserne
 
                 if (aHabilitation)
                 {
-                    var choixPompier = new UCChoixPompier
+                    var choixPompier = new UC_ChoixPompiers.UC_ChoixPompier
                     {
                         Top = top,
                         Left = left

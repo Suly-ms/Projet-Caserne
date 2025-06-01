@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UserControlChoixVehicules
+namespace UC_ChoixVehicules
 {
-    public partial class UCChoixVehicule: UserControl
+    public partial class UC_ChoixVehicule: UserControl
     {
         public event EventHandler<VehiculeChoisiEventArgs> VehiculeChoisi;
         public event EventHandler<VehiculeNonChoisiEventArgs> VehiculeNonChoisi;
         int m_caserne;
-        public UCChoixVehicule()
+        public UC_ChoixVehicule()
         {
             InitializeComponent();
         }
@@ -64,6 +64,11 @@ namespace UserControlChoixVehicules
             public int Numero { get; set; }
             public string Type { get; set; }
             public int Caserne { get; set; }
+        }
+
+        private void UC_ChoixVehicule_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

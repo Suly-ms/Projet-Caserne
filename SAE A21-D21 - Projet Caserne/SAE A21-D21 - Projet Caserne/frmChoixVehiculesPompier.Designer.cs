@@ -1,6 +1,6 @@
 ﻿namespace SAE_A21_D21___Projet_Caserne
 {
-    partial class frmChoixVehiculesPompier
+    partial class FrmChoixVehiculesPompier
     {
         /// <summary>
         /// Required designer variable.

@@ -66,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="frmChoixVehiculesPompier.cs">
+    <Compile Include="FrmChoixVehiculesPompier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChoixVehiculesPompier.Designer.cs">
-      <DependentUpon>frmChoixVehiculesPompier.cs</DependentUpon>
+    <Compile Include="FrmChoixVehiculesPompier.Designer.cs">
+      <DependentUpon>FrmChoixVehiculesPompier.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCompteRendu.cs">
       <SubType>Form</SubType>
@@ -117,11 +117,11 @@
     <Compile Include="UC_ChoixPompier.Designer.cs">
       <DependentUpon>UC_ChoixPompier.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ChoixVehicules.cs">
+    <Compile Include="UC_ChoixVehicule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ChoixVehicules.Designer.cs">
-      <DependentUpon>UC_ChoixVehicules.cs</DependentUpon>
+    <Compile Include="UC_ChoixVehicule.Designer.cs">
+      <DependentUpon>UC_ChoixVehicule.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_DoubleBoutonImage.cs">
       <SubType>UserControl</SubType>
@@ -129,8 +129,8 @@
     <Compile Include="UC_DoubleBoutonImage.Designer.cs">
       <DependentUpon>UC_DoubleBoutonImage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmChoixVehiculesPompier.resx">
-      <DependentUpon>frmChoixVehiculesPompier.cs</DependentUpon>
+    <EmbeddedResource Include="FrmChoixVehiculesPompier.resx">
+      <DependentUpon>FrmChoixVehiculesPompier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompteRendu.resx">
       <DependentUpon>FrmCompteRendu.cs</DependentUpon>
@@ -162,8 +162,8 @@
     <EmbeddedResource Include="UC_ChoixPompier.resx">
       <DependentUpon>UC_ChoixPompier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ChoixVehicules.resx">
-      <DependentUpon>UC_ChoixVehicules.cs</DependentUpon>
+    <EmbeddedResource Include="UC_ChoixVehicule.resx">
+      <DependentUpon>UC_ChoixVehicule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_DoubleBoutonImage.resx">
       <DependentUpon>UC_DoubleBoutonImage.cs</DependentUpon>

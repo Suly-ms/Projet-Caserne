@@ -1,8 +1,0 @@
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\bin\Debug\UserControlChoixPompier.dll
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\bin\Debug\UserControlChoixPompier.pdb
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.csproj.AssemblyReference.cache
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.UCChoixPompier.resources
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.csproj.GenerateResource.cache
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.csproj.CoreCompileInputs.cache
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.dll
-C:\Users\marti\Documents\IUT\SAE\A21\sae-a21-d21\UserControlChoixPompier\UserControlChoixPompier\obj\Debug\UserControlChoixPompier.pdb
